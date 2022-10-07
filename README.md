@@ -1,0 +1,2 @@
+# Civ IV selected songs tool
+ a tool that allows you to quickly edit the xml files that save the game's music settings. Basically you can put the songs that you like the most in the game and they will be played at the times corresponding to the folders.  Civilization IV has a great soundtrack but it doesn't correlate well with the eras. This tool allows you to add music very quickly to the different times of the game.
