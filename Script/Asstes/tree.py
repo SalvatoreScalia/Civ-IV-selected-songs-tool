@@ -65,7 +65,7 @@ def write_xml_gameinfo(list_of_songs,era_folder):
 def directory():
     #path of files
     path = path = OS.getcwd()
-    #print(path)
+    print(path)
     return path
 
 def list_of_songs_get(era_folder):
@@ -83,10 +83,10 @@ def list_of_songs_get(era_folder):
 #--------------------------parsing directly------------------------------#
 tree_gameinfo = ET.parse(directory() + '\Asstes\XML\GameInfo\CIV4EraInfos.xml')
 root_gameinfo = tree_gameinfo.getroot()
-tree_audio2dscripts = ET.parse(directory() + '\Asstes\XML\Audio\Audio2DScripts.xml')
-root_audio2dscripts = tree_audio2dscripts.getroot()
-tree_audiodefines = ET.parse(directory() + '\Asstes\XML\Audio\AudioDefines.xml')
-root_audiodefines = tree_audiodefines.getroot()
+#tree_audio2dscripts = ET.parse(directory() + '\Asstes\XML\Audio\Audio2DScripts.xml')
+#root_audio2dscripts = tree_audio2dscripts.getroot()
+#tree_audiodefines = ET.parse(directory() + '\Asstes\XML\Audio\AudioDefines.xml')
+#root_audiodefines = tree_audiodefines.getroot()
 #------------------------------------------------------------------------#
 
 #------------------------------------Menu----------------------------------#
