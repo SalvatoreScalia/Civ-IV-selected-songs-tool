@@ -307,9 +307,7 @@
 			<iEventChancePerTurn>8</iEventChancePerTurn>
 			<iSoundtrackSpace>120</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
-			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_01LISZTLESPRLUDESS97</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_01LISZTLESPRLUDESS97</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_03LISZTHUNGARIANRHAPSODY5</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_01LISZTLESPRLUDESS97</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_02LISZTORPHEUSS98</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_03LISZTHUNGARIANRHAPSODY5</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_04LISZTTASSOLAMENTOETRIONFOS96</EraInfoSoundtrack></EraInfoSoundtracks>
-			<CitySoundscapes>
+			<EraInfoSoundtracks><EraInfoSoundtrack>AS2D_01LISZTLESPRLUDESS97</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_02LISZTORPHEUSS98</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_03LISZTHUNGARIANRHAPSODY5</EraInfoSoundtrack><EraInfoSoundtrack>AS2D_04LISZTTASSOLAMENTOETRIONFOS96</EraInfoSoundtrack></EraInfoSoundtracks><CitySoundscapes>
 				<CitySoundscape>
 					<CitySizeType>CITYSIZE_SMALL</CitySizeType>
 					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>

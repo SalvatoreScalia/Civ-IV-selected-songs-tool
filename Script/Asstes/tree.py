@@ -1,3 +1,4 @@
+from logging import root
 import re as RE
 from xml.etree import ElementTree as ET
 import os as OS
@@ -26,34 +27,39 @@ def print_all_songs():
             print(x.text)
 
 def write_xml_gameinfo(list_of_songs,era_folder):
-    if len(root_gameinfo[0]) != len(epocas):
-        print("tag_era are missing, the tag_era found are:")
-        for tag_EraInfo in root_gameinfo[0]:
-            print(tag_EraInfo[0].text)                
-    else:
-        # get the index of era_folder
-        index = epocas.index(era_folder)
-        if root_gameinfo[0][index][31].tag == (ns + 'EraInfoSoundtracks'):
-            #clear songs
-            for element in root_gameinfo[0][index][31]:
-                root_gameinfo[0][index][31].remove(element)
-                print(root_gameinfo[0][index][31].tag)
-                print(len(root_gameinfo[0][index][31]))
-            #new songs
-            for song in list_of_songs:
-                name_song = OS.path.splitext(song)[0] 
-                refactor_name = RE.sub(r"[^a-zA-Z0-9]", "", str(name_song))     # Remove Special Characters from a String Using re.sub()           
-                new_song=ET.Element(song_tag)
-                new_song.text= pref + refactor_name.upper()
-                root_gameinfo[0][index][31].append(new_song)
+    if list_of_songs == False:
+        return False
+    try:
+        if len(epocas) != len(root_gameinfo[0]):
+            print('there are tags in CIV4EraInfos.xml missing')
+            return False
         else:
-            print("EraInfoSoundtracks not found")
+            # get the index of era_folder
+            index = epocas.index(era_folder)
+            if root_gameinfo[0][index][31].tag == (ns + 'EraInfoSoundtracks'):
+                #clear songs
+                root_gameinfo[0][index][31].clear()
+                #new songs
+                for song in list_of_songs:
+                    name_song = OS.path.splitext(song)[0] 
+                    refactor_name = RE.sub(r"[^a-zA-Z0-9]", "", str(name_song))     # Remove Special Characters from a String Using re.sub()           
+                    new_song=ET.Element(song_tag)
+                    new_song.text= pref + refactor_name.upper()
+                    root_gameinfo[0][index][31].append(new_song)
+            else:
+                print("The tag EraInfoSoundtracks not found. Tag: "+root_gameinfo[0][index][31].tag)
+                return False
+    except:
+        print('Something went wrong when append the new songs')
+        return False
     try:
         ET.register_namespace('',"x-schema:CIV4GameInfoSchema.xml")
         tree_gameinfo.write('output.xml')
         #print_all_songs()
+        return True
     except:
         print("Something went wrong when writing to the file")
+        return False
 
  
 def directory():
@@ -63,10 +69,15 @@ def directory():
     return path
 
 def list_of_songs_get(era_folder):
-    #arr of dictory and files in the soundtracks folder
-    list_of_songs = OS.listdir(directory() + '\Asstes\Sounds\Soundtracks' + chr(92) + era_folder)
-    print(list_of_songs)
-    return list_of_songs
+    #list of dictory and files in the soundtracks\era_folder
+    try:
+        list_of_songs = OS.listdir(directory() + '\Asstes\Sounds\Soundtracks' + chr(92) + era_folder)
+        print(list_of_songs)
+        return list_of_songs
+    except:
+        print('the folder ' + era_folder + ' not found!')
+        return False
+
 #------------------------------------------------------------------------#
 
 #--------------------------parsing directly------------------------------#
@@ -82,21 +93,24 @@ root_audiodefines = tree_audiodefines.getroot()
 rootTK= tk.Tk()
 
 rootTK.title('Civ IV selected songs')
-canvas1 = tk.Canvas(rootTK, width = 500, height = 600)
+canvas1 = tk.Canvas(rootTK, width = 430, height = 440)
 canvas1.pack()
 
 label1 = tk.Label(rootTK, text= 'Select the folder and load: ', fg='blue', font=('helvetica', 12, 'bold'))
-canvas1.create_window(150, 50, window=label1)
+canvas1.create_window(215, 30, window=label1)
 
 #define buttons and functions
 for x in range(len(epocas)):
     def action (epoca = epocas[x]):
-        label1 = tk.Label(rootTK, text= epoca, fg='blue', font=('helvetica', 12, 'bold'))
-        canvas1.create_window(150, 550, window=label1)
-        write_xml_gameinfo(list_of_songs_get(epoca),epoca)
+        if write_xml_gameinfo(list_of_songs_get(epoca),epoca):
+            label1 = tk.Label(rootTK, text='The files in the ' +epoca+ ' folder were added successfully!', fg='blue', font=('helvetica', 12, 'bold'))
+            canvas1.create_window(215, 400, window=label1)
+        else:
+            label1 = tk.Label(rootTK, text= '               Something went wrong in the process!!             ', fg='red', font=('helvetica', 12, 'bold'))
+            canvas1.create_window(215, 400, window=label1)
     button = tk.Button(text=epocas[x], command=action, bg='brown',fg='white')
     #buttons.append(button)
-    canvas1.create_window(150, 150 + x*space_buttons, window=button)
+    canvas1.create_window(215, 60 + x*space_buttons, window=button)
 
 rootTK.mainloop()
 
