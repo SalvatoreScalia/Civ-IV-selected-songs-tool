@@ -12,7 +12,10 @@ song_tag = 'EraInfoSoundtrack'
 #quantity of folder
 epocas = ["Ancient","Classical","Medieval","Renaissance","Industrial","Modern","Future"]
 #space between buttons
-space_buttons = 50 
+space_buttons = 50
+
+#Correct path of CIV4-Selected-Songs
+incorrectpath = False
 
 #--------------------------------Script------------------------------------#
 #list with all songs in xml
@@ -38,8 +41,9 @@ def list_of_songs_get(era_folder):
         list_of_songs = OS.listdir(directory_get() + '\Sounds\Soundtrack' + chr(92) + era_folder)
         #print(list_of_songs)
         return list_of_songs
-    except:
+    except Exception as e:
         print('the folder ' + era_folder + ' not found!')
+        print(e)
         return False
 
 def write_xml_gameinfo(era_folder):
@@ -66,22 +70,27 @@ def write_xml_gameinfo(era_folder):
             else:
                 print("The tag EraInfoSoundtracks not found. Tag: "+root_gameinfo[0][index][31].tag)
                 return False
-    except:
+    except Exception as e:
         print('Something went wrong when append the new songs in root infogame.')
+        print(e)
         return False
     try:
+        ET.indent(tree_gameinfo)
         ET.register_namespace('',"x-schema:CIV4GameInfoSchema.xml")
         tree_gameinfo.write('output_gi.xml')
         #print_all_songs()
         return True
-    except:
+    except Exception as e:
         print("Something went wrong when writing to the file CIV4GameInfos.xml")
+        print(e)
         return False
 
 def write_xml_audiodefines(era_folder):
     try:
         list_of_songs = list_of_songs_get(era_folder=era_folder)
-        print(list_of_songs)
+        #print('List of songs: '+ list_of_songs)
+        if list_of_songs == False:
+            return False
         for song in list_of_songs:
             element = ET.Element('SoundData')
             name_file = OS.path.splitext(song)[0] 
@@ -93,33 +102,41 @@ def write_xml_audiodefines(era_folder):
             se_biscompressed = ET.SubElement(element, 'bIsCompressed')
             se_bingeneric = ET.SubElement(element, 'bInGeneric')
             se_songid.text = song_id
-            se_filename.text = '\Sounds\Soundtrack' + chr(92) + era_folder + chr(92) + name_file
+            se_filename.text = 'Sounds\Soundtrack' + chr(92) + era_folder + chr(92) + name_file
             se_loadtype.text = 'STREAMED'
             se_biscompressed.text = '1'
             se_bingeneric.text = '1'
-            # print(ET.tostring(element,encoding="unicode"))
             root_audiodefines[0].append(element)
-    except:
+    except Exception as e:
         print('Something went wrong when append the new songs in root audiodefines.')
+        print(e)
         return False
     try:
+        ET.indent(tree_audiodefines)
         ET.register_namespace('',"x-schema:AudioDefinesSchema.xml")
         tree_audiodefines.write('output_ad.xml')
         return True
-    except:
+    except Exception as e:
         print("Something went wrong when writing to the file AudioDefines.xml")
+        print(e)
         return False
+
 def write_xml_audio2dscripts():
     return False
 #------------------------------------------------------------------------#
 
 #--------------------------parsing directly------------------------------#
-tree_gameinfo = ET.parse(directory_get() + '\XML\GameInfo\CIV4EraInfos.xml')
-root_gameinfo = tree_gameinfo.getroot()
-tree_audio2dscripts = ET.parse(directory_get() + '\XML\Audio\Audio2DScripts.xml')
-root_audio2dscripts = tree_audio2dscripts.getroot()
-tree_audiodefines = ET.parse(directory_get() + '\XML\Audio\AudioDefines.xml')
-root_audiodefines = tree_audiodefines.getroot()
+print("ET: " +ET.VERSION)
+try:
+    tree_gameinfo = ET.parse(directory_get() + '\XML\GameInfo\CIV4EraInfos.xml')
+    root_gameinfo = tree_gameinfo.getroot()
+    tree_audio2dscripts = ET.parse(directory_get() + '\XML\Audio\Audio2DScripts.xml')
+    root_audio2dscripts = tree_audio2dscripts.getroot()
+    tree_audiodefines = ET.parse(directory_get() + '\XML\Audio\AudioDefines.xml')
+    root_audiodefines = tree_audiodefines.getroot()
+except Exception as e:
+    incorrectpath = True
+    print(e)
 #------------------------------------------------------------------------#
 
 #------------------------------------Menu----------------------------------#
@@ -146,6 +163,9 @@ for x in range(len(epocas)):
     button = tk.Button(text=epocas[x], command=action, bg='brown',fg='white')
     #buttons.append(button)
     canvas1.create_window(215, 60 + x*space_buttons, window=button)
+    if incorrectpath:
+        label1 = tk.Label(rootTK, text= '           Ensure the program is running in the Assets folder!!            ', fg='red', font=('helvetica', 12, 'bold'))
+        canvas1.create_window(215, 400, window=label1)
 
 rootTK.mainloop()
 
