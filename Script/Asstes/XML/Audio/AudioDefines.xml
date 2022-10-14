@@ -729,15 +729,15 @@
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
-      <SoundID>SONG_BEETHOVENSYMPHONY5_1</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\BeethovenSymphony5 1</Filename>
+      <SoundID>SONG_BEETHOVENSYMPHONY51</SoundID>
+      <Filename>Sounds/Soundtrack/Industrial/BeethovenSymphony5 1</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
-      <SoundID>SONG_BEETHOVENSYMPHONY5_2</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial/BeethovenSymphony5 2</Filename>
+      <SoundID>SONG_BEETHOVENSYMPHONY52</SoundID>
+      <Filename>Sounds/Soundtrack/Industrial/BeethovenSymphony5 2</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
@@ -12721,84 +12721,49 @@
     </SoundData>
     <SoundData>
       <SoundID>SONG_01LISZTLESPRLUDESS97</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\01LISZTLESPRLUDESS97</Filename>
+      <Filename>Sounds/Soundtrack/Industrial/01 Liszt- Les Pr&#233;ludes, S 97</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
       <SoundID>SONG_02LISZTORPHEUSS98</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\02LISZTORPHEUSS98</Filename>
+      <Filename>Sounds/Soundtrack/Industrial/02 Liszt- Orpheus, S 98</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
       <SoundID>SONG_03LISZTHUNGARIANRHAPSODY5</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\03LISZTHUNGARIANRHAPSODY5</Filename>
+      <Filename>Sounds/Soundtrack/Industrial/03 Liszt- Hungarian Rhapsody #5</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
       <SoundID>SONG_04LISZTTASSOLAMENTOETRIONFOS96</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\04LISZTTASSOLAMENTOETRIONFOS96</Filename>
+      <Filename>Sounds/Soundtrack/Industrial/04 Liszt- Tasso, Lamento E Trionfo, S 96</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
-      <SoundID>SONG_01LISZTLESPRLUDESS97</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\01LISZTLESPRLUDESS97</Filename>
+      <SoundID>SONG_BEETHOVENSYMPHONY53</SoundID>
+      <Filename>Sounds/Soundtrack/Industrial/BeethovenSymphony5 3</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
-      <SoundID>SONG_02LISZTORPHEUSS98</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\02LISZTORPHEUSS98</Filename>
+      <SoundID>SONG_BEETHOVENSYMPHONY54</SoundID>
+      <Filename>Sounds/Soundtrack/Industrial/BeethovenSymphony5 4</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>
     </SoundData>
     <SoundData>
-      <SoundID>SONG_03LISZTHUNGARIANRHAPSODY5</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\03LISZTHUNGARIANRHAPSODY5</Filename>
-      <LoadType>STREAMED</LoadType>
-      <bIsCompressed>1</bIsCompressed>
-      <bInGeneric>1</bInGeneric>
-    </SoundData>
-    <SoundData>
-      <SoundID>SONG_04LISZTTASSOLAMENTOETRIONFOS96</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\04LISZTTASSOLAMENTOETRIONFOS96</Filename>
-      <LoadType>STREAMED</LoadType>
-      <bIsCompressed>1</bIsCompressed>
-      <bInGeneric>1</bInGeneric>
-    </SoundData>
-    <SoundData>
-      <SoundID>SONG_01LISZTLESPRLUDESS97</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\01LISZTLESPRLUDESS97</Filename>
-      <LoadType>STREAMED</LoadType>
-      <bIsCompressed>1</bIsCompressed>
-      <bInGeneric>1</bInGeneric>
-    </SoundData>
-    <SoundData>
-      <SoundID>SONG_02LISZTORPHEUSS98</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\02LISZTORPHEUSS98</Filename>
-      <LoadType>STREAMED</LoadType>
-      <bIsCompressed>1</bIsCompressed>
-      <bInGeneric>1</bInGeneric>
-    </SoundData>
-    <SoundData>
-      <SoundID>SONG_03LISZTHUNGARIANRHAPSODY5</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\03LISZTHUNGARIANRHAPSODY5</Filename>
-      <LoadType>STREAMED</LoadType>
-      <bIsCompressed>1</bIsCompressed>
-      <bInGeneric>1</bInGeneric>
-    </SoundData>
-    <SoundData>
-      <SoundID>SONG_04LISZTTASSOLAMENTOETRIONFOS96</SoundID>
-      <Filename>Sounds\Soundtrack\Industrial\04LISZTTASSOLAMENTOETRIONFOS96</Filename>
+      <SoundID>SONG_BEETHOVENSYMPHONY71</SoundID>
+      <Filename>Sounds/Soundtrack/Industrial/BeethovenSymphony7 1</Filename>
       <LoadType>STREAMED</LoadType>
       <bIsCompressed>1</bIsCompressed>
       <bInGeneric>1</bInGeneric>

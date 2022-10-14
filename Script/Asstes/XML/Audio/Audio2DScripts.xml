@@ -27217,8 +27217,8 @@
     <iNotPlayPercent>0</iNotPlayPercent>
   </Script2DSound>
   <Script2DSound>
-    <ScriptID>AS2D_01LISZTLESPRLUDESS97</ScriptID>
-    <SoundID>SONG_01LISZTLESPRLUDESS97</SoundID>
+    <ScriptID>AS2D_BEETHOVENSYMPHONY51</ScriptID>
+    <SoundID>SONG_BEETHOVENSYMPHONY51</SoundID>
     <SoundType>GAME_MUSIC</SoundType>
     <iMinVolume>70</iMinVolume>
     <iMaxVolume>70</iMaxVolume>
@@ -27240,8 +27240,8 @@
     <iNotPlayPercent>0</iNotPlayPercent>
   </Script2DSound>
   <Script2DSound>
-    <ScriptID>AS2D_02LISZTORPHEUSS98</ScriptID>
-    <SoundID>SONG_02LISZTORPHEUSS98</SoundID>
+    <ScriptID>AS2D_BEETHOVENSYMPHONY52</ScriptID>
+    <SoundID>SONG_BEETHOVENSYMPHONY52</SoundID>
     <SoundType>GAME_MUSIC</SoundType>
     <iMinVolume>70</iMinVolume>
     <iMaxVolume>70</iMaxVolume>
@@ -27263,8 +27263,8 @@
     <iNotPlayPercent>0</iNotPlayPercent>
   </Script2DSound>
   <Script2DSound>
-    <ScriptID>AS2D_03LISZTHUNGARIANRHAPSODY5</ScriptID>
-    <SoundID>SONG_03LISZTHUNGARIANRHAPSODY5</SoundID>
+    <ScriptID>AS2D_BEETHOVENSYMPHONY53</ScriptID>
+    <SoundID>SONG_BEETHOVENSYMPHONY53</SoundID>
     <SoundType>GAME_MUSIC</SoundType>
     <iMinVolume>70</iMinVolume>
     <iMaxVolume>70</iMaxVolume>
@@ -27286,8 +27286,8 @@
     <iNotPlayPercent>0</iNotPlayPercent>
   </Script2DSound>
   <Script2DSound>
-    <ScriptID>AS2D_04LISZTTASSOLAMENTOETRIONFOS96</ScriptID>
-    <SoundID>SONG_04LISZTTASSOLAMENTOETRIONFOS96</SoundID>
+    <ScriptID>AS2D_BEETHOVENSYMPHONY54</ScriptID>
+    <SoundID>SONG_BEETHOVENSYMPHONY54</SoundID>
     <SoundType>GAME_MUSIC</SoundType>
     <iMinVolume>70</iMinVolume>
     <iMaxVolume>70</iMaxVolume>
@@ -27309,77 +27309,8 @@
     <iNotPlayPercent>0</iNotPlayPercent>
   </Script2DSound>
   <Script2DSound>
-    <ScriptID>AS2D_01LISZTLESPRLUDESS97</ScriptID>
-    <SoundID>SONG_01LISZTLESPRLUDESS97</SoundID>
-    <SoundType>GAME_MUSIC</SoundType>
-    <iMinVolume>70</iMinVolume>
-    <iMaxVolume>70</iMaxVolume>
-    <iPitchChangeDown>0</iPitchChangeDown>
-    <iPitchChangeUp>0</iPitchChangeUp>
-    <iMinLeftPan>-1</iMinLeftPan>
-    <iMaxLeftPan>-1</iMaxLeftPan>
-    <iMinRightPan>-1</iMinRightPan>
-    <iMaxRightPan>-1</iMaxRightPan>
-    <bLooping>0</bLooping>
-    <iMinTimeDelay>0</iMinTimeDelay>
-    <iMaxTimeDelay>0</iMaxTimeDelay>
-    <bTaperForSoundtracks>0</bTaperForSoundtracks>
-    <iLengthOfSound>0</iLengthOfSound>
-    <fMinDryLevel>1.0</fMinDryLevel>
-    <fMaxDryLevel>1.0</fMaxDryLevel>
-    <fMinWetLevel>0.0</fMinWetLevel>
-    <fMaxWetLevel>0.0</fMaxWetLevel>
-    <iNotPlayPercent>0</iNotPlayPercent>
-  </Script2DSound>
-  <Script2DSound>
-    <ScriptID>AS2D_02LISZTORPHEUSS98</ScriptID>
-    <SoundID>SONG_02LISZTORPHEUSS98</SoundID>
-    <SoundType>GAME_MUSIC</SoundType>
-    <iMinVolume>70</iMinVolume>
-    <iMaxVolume>70</iMaxVolume>
-    <iPitchChangeDown>0</iPitchChangeDown>
-    <iPitchChangeUp>0</iPitchChangeUp>
-    <iMinLeftPan>-1</iMinLeftPan>
-    <iMaxLeftPan>-1</iMaxLeftPan>
-    <iMinRightPan>-1</iMinRightPan>
-    <iMaxRightPan>-1</iMaxRightPan>
-    <bLooping>0</bLooping>
-    <iMinTimeDelay>0</iMinTimeDelay>
-    <iMaxTimeDelay>0</iMaxTimeDelay>
-    <bTaperForSoundtracks>0</bTaperForSoundtracks>
-    <iLengthOfSound>0</iLengthOfSound>
-    <fMinDryLevel>1.0</fMinDryLevel>
-    <fMaxDryLevel>1.0</fMaxDryLevel>
-    <fMinWetLevel>0.0</fMinWetLevel>
-    <fMaxWetLevel>0.0</fMaxWetLevel>
-    <iNotPlayPercent>0</iNotPlayPercent>
-  </Script2DSound>
-  <Script2DSound>
-    <ScriptID>AS2D_03LISZTHUNGARIANRHAPSODY5</ScriptID>
-    <SoundID>SONG_03LISZTHUNGARIANRHAPSODY5</SoundID>
-    <SoundType>GAME_MUSIC</SoundType>
-    <iMinVolume>70</iMinVolume>
-    <iMaxVolume>70</iMaxVolume>
-    <iPitchChangeDown>0</iPitchChangeDown>
-    <iPitchChangeUp>0</iPitchChangeUp>
-    <iMinLeftPan>-1</iMinLeftPan>
-    <iMaxLeftPan>-1</iMaxLeftPan>
-    <iMinRightPan>-1</iMinRightPan>
-    <iMaxRightPan>-1</iMaxRightPan>
-    <bLooping>0</bLooping>
-    <iMinTimeDelay>0</iMinTimeDelay>
-    <iMaxTimeDelay>0</iMaxTimeDelay>
-    <bTaperForSoundtracks>0</bTaperForSoundtracks>
-    <iLengthOfSound>0</iLengthOfSound>
-    <fMinDryLevel>1.0</fMinDryLevel>
-    <fMaxDryLevel>1.0</fMaxDryLevel>
-    <fMinWetLevel>0.0</fMinWetLevel>
-    <fMaxWetLevel>0.0</fMaxWetLevel>
-    <iNotPlayPercent>0</iNotPlayPercent>
-  </Script2DSound>
-  <Script2DSound>
-    <ScriptID>AS2D_04LISZTTASSOLAMENTOETRIONFOS96</ScriptID>
-    <SoundID>SONG_04LISZTTASSOLAMENTOETRIONFOS96</SoundID>
+    <ScriptID>AS2D_BEETHOVENSYMPHONY71</ScriptID>
+    <SoundID>SONG_BEETHOVENSYMPHONY71</SoundID>
     <SoundType>GAME_MUSIC</SoundType>
     <iMinVolume>70</iMinVolume>
     <iMaxVolume>70</iMaxVolume>
